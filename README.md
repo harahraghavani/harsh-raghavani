@@ -1,3 +1,3 @@
 # Harsh Raghavani's Portfolio
 
-## Features : [Link](https://harsh-raghavani.vercel.app/)
+Features : [Link](https://harsh-raghavani.vercel.app/)
