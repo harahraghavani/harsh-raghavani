@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Provider from "@/provider/Provider";
 import "./globals.css";
 
@@ -46,7 +47,10 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
       </head>
       <body>
-        <Provider>{children}</Provider>
+        <Provider>
+          {children}
+          <Analytics />
+        </Provider>
       </body>
     </html>
   );
