@@ -10,7 +10,8 @@ import { MdShoppingCart } from "react-icons/md";
 
 export const ABOUT_ME = {
   name: "Harsh Raghavani",
-  description: "Web Developer, Creative Editor",
+  description:
+    "Web Developer, React JS, Next JS | Photographer, Creative Editor",
 };
 
 export const SOCIAL_LINKS = [

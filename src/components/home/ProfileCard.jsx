@@ -32,7 +32,13 @@ const ProfileCard = () => {
         </Box>
 
         {/* Name & Description */}
-        <Heading as="h2" size="md" mt={2} textAlign="center">
+        <Heading
+          as="h2"
+          size="md"
+          mt={2}
+          textAlign="center"
+          letterSpacing={0.5}
+        >
           {ABOUT_ME.name}
         </Heading>
         <Text
@@ -41,6 +47,7 @@ const ProfileCard = () => {
           style={{
             opacity: 0.6,
           }}
+          letterSpacing={0.7}
         >
           {ABOUT_ME.description}
         </Text>

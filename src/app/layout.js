@@ -1,6 +1,13 @@
 import { Analytics } from "@vercel/analytics/react";
 import Provider from "@/provider/Provider";
+import { Lexend } from "next/font/google";
 import "./globals.css";
+
+const lexend = Lexend({
+  subsets: ["latin"],
+  variable: "--font-lexend",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Harsh Raghavani",
@@ -11,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={lexend.variable}>
       <head>
         {/* Basic Meta Tags */}
         <meta charSet="UTF-8" />
