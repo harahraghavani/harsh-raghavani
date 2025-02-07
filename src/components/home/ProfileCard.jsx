@@ -5,8 +5,14 @@ import { ABOUT_ME } from "@/constant/constant";
 
 const ProfileCard = () => {
   return (
-    <Box>
-      <Flex flexDirection="column" gap={3} align="center">
+    <Box height="100%">
+      <Flex
+        flexDirection="column"
+        gap={3}
+        alignItems="center"
+        justifyContent="center"
+        height="100%"
+      >
         {/* Image Wrapper */}
         <Box
           position="relative"
@@ -48,6 +54,11 @@ const ProfileCard = () => {
             opacity: 0.6,
           }}
           letterSpacing={0.7}
+          maxWidth={{
+            base: "80%",
+            md: "70%",
+          }}
+          whiteSpace="pre-line"
         >
           {ABOUT_ME.description}
         </Text>

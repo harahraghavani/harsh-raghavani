@@ -21,6 +21,11 @@ export const SOCIAL_LINKS = [
     icon: FaLinkedin,
   },
   {
+    name: "GitHub",
+    url: "https://github.com/harahraghavani",
+    icon: FaGithub,
+  },
+  {
     name: "Instagram",
     url: "https://www.instagram.com/justaclick.24",
     icon: FaInstagram,
@@ -29,11 +34,6 @@ export const SOCIAL_LINKS = [
     name: "Unsplash",
     url: "https://unsplash.com/@justaclick_24",
     icon: SiUnsplash,
-  },
-  {
-    name: "GitHub",
-    url: "https://github.com/harahraghavani",
-    icon: FaGithub,
   },
   {
     name: "Pinterest",
