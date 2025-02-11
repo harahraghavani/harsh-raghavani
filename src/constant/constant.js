@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaPinterest,
   FaBehance,
+  FaEnvelope,
 } from "react-icons/fa";
 import { SiUnsplash, SiPexels } from "react-icons/si";
 import { MdShoppingCart } from "react-icons/md";
@@ -15,6 +16,11 @@ export const ABOUT_ME = {
 };
 
 export const SOCIAL_LINKS = [
+  {
+    name: "Send an inquiry",
+    url: "mailto:harshraghavani24@gmail.com",
+    icon: FaEnvelope,
+  },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/harshraghavani",
