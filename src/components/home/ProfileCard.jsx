@@ -13,57 +13,56 @@ const ProfileCard = () => {
         justifyContent="center"
         height="100%"
       >
-        {/* Image Wrapper */}
-        <Box
-          position="relative"
-          width="200px"
-          height="200px"
-          borderRadius="full"
-          overflow="hidden"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          mx="auto"
+        <Flex
+          direction={{ base: "column", md: "row" }}
+          align="center"
+          justify="center"
+          gap={6}
+          maxW="90%"
         >
-          <Image
-            src={ProfileImage}
-            alt={ABOUT_ME.name}
-            placeholder="blur"
-            fill
-            sizes="(max-width: 768px) 150px, 200px"
-            priority
-            quality={90}
-            style={{ objectFit: "cover" }}
-          />
-        </Box>
+          {/* Image Section - Left */}
+          <Box
+            position="relative"
+            width="150px"
+            height="150px"
+            borderRadius="full"
+            overflow="hidden"
+            flexShrink={0}
+          >
+            <Image
+              src={ProfileImage}
+              alt={ABOUT_ME.name}
+              placeholder="blur"
+              fill
+              sizes="(max-width: 768px) 120px, 150px"
+              priority
+              quality={90}
+              style={{ objectFit: "cover" }}
+            />
+          </Box>
 
-        {/* Name & Description */}
-        <Heading
-          as="h2"
-          size="md"
-          mt={2}
-          textAlign="center"
-          letterSpacing={0.5}
-        >
-          {ABOUT_ME.name}
-        </Heading>
-        <Text
-          fontSize="sm"
-          textAlign="center"
-          style={{
-            opacity: 0.6,
-          }}
-          letterSpacing={0.7}
-          maxWidth={{
-            base: "80%",
-            md: "100%",
-          }}
-          whiteSpace="pre-line"
-        >
-          {ABOUT_ME.description}
-        </Text>
+          {/* Name & Description - Right */}
+          <Box textAlign={{ base: "center", md: "left" }}>
+            <Heading as="h2" size="md" letterSpacing={0.5} mb={2}>
+              {ABOUT_ME.name}
+            </Heading>
+            <Text
+              fontSize="sm"
+              opacity={0.7}
+              letterSpacing={0.5}
+              lineHeight={1.5}
+              maxW={{
+                base: "100%",
+                md: "70%",
+              }}
+            >
+              {ABOUT_ME.description}
+            </Text>
+          </Box>
+        </Flex>
+
         {/* About Me Section (SEO Optimized) */}
-        <Box as="section" aria-label="About Me" maxW="80%" textAlign="justify">
+        <Box as="section" aria-label="About Me" maxW="90%" textAlign="justify">
           <Text
             fontSize="sm"
             mt={2}

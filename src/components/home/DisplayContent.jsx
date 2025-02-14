@@ -13,7 +13,7 @@ const DisplayContent = () => {
           md: 1,
         }}
         height="100%"
-        alignItems="flex-start"
+        alignItems="center"
         justifyContent="center"
       >
         {/* PROFILE CARD SECTION (Sticky) */}
