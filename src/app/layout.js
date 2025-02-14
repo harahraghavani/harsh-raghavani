@@ -12,7 +12,7 @@ const lexend = Lexend({
 export const metadata = {
   title: "Harsh Raghavani",
   description: "Web Developer, Photographer, Creative Editor",
-  keywords: "Harsh Raghavani | Web Developer, Photographer, Creative Editor",
+  keywords: "Web Developer, Photographer, Creative Editor",
   author: "Harsh Raghavani",
 };
 
