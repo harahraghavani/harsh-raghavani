@@ -13,14 +13,14 @@ const DisplayContent = () => {
           md: 1,
         }}
         height="100%"
-        alignItems="center"
+        alignItems="flex-start"
         justifyContent="center"
       >
         {/* PROFILE CARD SECTION (Sticky) */}
         <GridItem
           colSpan={{
             base: 12,
-            md: 7,
+            md: 8,
           }}
         >
           <ProfileCard />
@@ -29,7 +29,7 @@ const DisplayContent = () => {
         <GridItem
           colSpan={{
             base: 12,
-            md: 5,
+            md: 4,
           }}
         >
           <LinkCard />

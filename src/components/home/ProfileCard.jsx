@@ -56,12 +56,25 @@ const ProfileCard = () => {
           letterSpacing={0.7}
           maxWidth={{
             base: "80%",
-            md: "70%",
+            md: "100%",
           }}
           whiteSpace="pre-line"
         >
           {ABOUT_ME.description}
         </Text>
+        {/* About Me Section (SEO Optimized) */}
+        <Box as="section" aria-label="About Me" maxW="80%" textAlign="justify">
+          <Text
+            fontSize="sm"
+            mt={2}
+            opacity={0.7}
+            whiteSpace="pre-line"
+            letterSpacing={0.4}
+            lineHeight={1.7}
+          >
+            {ABOUT_ME.about}
+          </Text>
+        </Box>
       </Flex>
     </Box>
   );
