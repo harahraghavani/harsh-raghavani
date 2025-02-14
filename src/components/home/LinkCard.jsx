@@ -14,7 +14,7 @@ const LinkCard = () => {
         gap={5} // Uniform spacing between buttons
       >
         {SOCIAL_LINKS.map((link) => (
-          <Box width="100%">
+          <Box width="100%" key={link.name}>
             <Link key={link.name} href={link.url} passHref target="_blank">
               <Button
                 width="full"

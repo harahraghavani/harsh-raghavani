@@ -27,6 +27,26 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content={metadata.author} />
         <meta name="robots" content="index, follow" />
+
+        {/* Open Graph / Social Media Meta Tags */}
+        <meta property="og:title" content="Harsh Raghavani" />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:url" content="https://harshraghavani.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://harshraghavani.vercel.app/your-image.jpg"
+        />
+
+        {/* Twitter Card for better sharing */}
+        <meta name="twitter:title" content="Harsh Raghavani" />
+        <meta name="twitter:description" content={metadata.description} />
+        <meta
+          name="twitter:image"
+          content="https://harshraghavani.vercel.app/your-image.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
         {/* Structured Data (JSON-LD) for Rich Results */}
         <script
           type="application/ld+json"
@@ -53,6 +73,7 @@ export default function RootLayout({ children }) {
 
         <title>{metadata.title}</title>
       </head>
+
       <body>
         <Provider>
           {children}
