@@ -11,19 +11,15 @@ const lexend = Lexend({
 
 export const metadata = {
   title: "Harsh Raghavani",
-  description: "Web Developer, Photographer, Creative Editor",
+  description:
+    "I specialize in blending technical expertise with creative vision to craft exceptional digital experiences. With a strong foundation in HTML, CSS, JavaScript, React JS, and Next JS, I design and develop user-friendly, visually stunning web interfaces that captivate and engage audiences",
   keywords: "Web Developer, Photographer, Creative Editor",
-  author: "Harsh Raghavani",
+  authors: [{ name: "Harsh Raghavani" }],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={lexend.variable}>
-      <head>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <meta name="author" content={metadata.author} />
-      </head>
       <body>
         <Provider>
           {children}
