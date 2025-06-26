@@ -43,18 +43,14 @@ const ProfileCard = () => {
 
           {/* Name & Description - Right */}
           <Box textAlign={{ base: "center", md: "left" }}>
-            <Heading as="h2" size="md" letterSpacing={0.5} mb={2}>
+            <Heading as="h2" size="md" letterSpacing={0.6} mb={3} textTransform="uppercase" fontWeight="bold">
               {ABOUT_ME.name}
             </Heading>
             <Text
               fontSize="sm"
-              opacity={0.7}
-              letterSpacing={0.5}
-              lineHeight={1.5}
-              maxW={{
-                base: "100%",
-                md: "70%",
-              }}
+              opacity={0.9}
+              letterSpacing={0.7}
+              lineHeight={1.7}
             >
               {ABOUT_ME.description}
             </Text>
@@ -63,16 +59,19 @@ const ProfileCard = () => {
 
         {/* About Me Section (SEO Optimized) */}
         <Box as="section" aria-label="About Me" maxW="90%" textAlign="justify">
+        {ABOUT_ME.about.map((para, i) => (
           <Text
+            key={i}
             fontSize="sm"
-            mt={2}
+            mt={i === 0 ? 2 : 4}
             opacity={0.7}
             whiteSpace="pre-line"
             letterSpacing={0.4}
             lineHeight={1.7}
           >
-            {ABOUT_ME.about}
+            {para}
           </Text>
+        ))}
         </Box>
       </Flex>
     </Box>

@@ -12,7 +12,7 @@ const lexend = Lexend({
 export const metadata = {
   title: "Harsh Raghavani",
   description:
-    "I specialize in blending technical expertise with creative vision to craft exceptional digital experiences. With a strong foundation in HTML, CSS, JavaScript, React JS, and Next JS, I design and develop user-friendly, visually stunning web interfaces that captivate and engage audiences",
+    "Hi, I’m Harsh, a dedicated Web Developer passionate about building fast, functional, and scalable web applications using JavaScript, React.js, and Next.js.",
   keywords: "Web Developer, Photographer, Creative Editor",
   authors: [{ name: "Harsh Raghavani" }],
 };

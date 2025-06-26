@@ -11,17 +11,16 @@ import { SiUnsplash, SiPexels, SiAdobelightroomclassic } from "react-icons/si";
 export const ABOUT_ME = {
   name: "Harsh Raghavani",
   description:
-    "Web Developer, React JS, Next JS | Photographer, Creative Editor",
-  about: `I specialize in blending technical expertise with creative vision to craft exceptional digital experiences. With a strong foundation in HTML, CSS, JavaScript, React JS, and Next JS, I design and develop user-friendly, visually stunning web interfaces that captivate and engage audiences.
+    "Web Developer (JavaScript, React JS, Next JS), Photographer, Creative Editor",
+  about: [
+    `Hi, I’m Harsh, a dedicated Web Developer passionate about building fast, functional, and scalable web applications using JavaScript, React.js, and Next.js.`,
 
-My passion extends beyond coding into the world of UI/UX design, graphic design, and multimedia editing, where I bring stories to life through impactful visuals. Proficient in industry-standard tools like Visual Studio Code, Adobe Lightroom, Premiere Pro, Photoshop, and Canva, I have honed my skills to deliver flawless results in photography, photo editing (specializing in wedding photography), video editing, and color grading.
+    `I enjoy diving into product requirements, understanding the “why” behind features, and turning ideas into clean, maintainable code. Whether it’s developing from scratch or improving existing functionality, I’m always focused on delivering efficient, high-quality results.`,
 
-Achievements:
+    `🚀 I’m currently open to new opportunities where I can make a meaningful impact, contribute to real-world solutions, and grow with a team that values clean code and collaboration.`,
 
-Garnered over 7 million views on Unsplash, reflecting the quality and reach of my visual creations.
-Recognized for creating compelling designs that combine technical excellence with artistic innovation.
-
-If you're seeking a professional who can elevate your projects through a unique blend of technical know-how and creative brilliance, feel free to connect. Let’s collaborate to transform ideas into reality.`,
+    `Let’s connect, I’d love to bring value to your team and help build something great.`,
+  ],
 };
 
 export const SOCIAL_LINKS = [

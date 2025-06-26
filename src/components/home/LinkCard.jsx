@@ -25,6 +25,10 @@ const LinkCard = () => {
                 transition="all 0.3s ease"
                 willChange="transform, box-shadow"
                 aria-label={`Open ${link.name}`}
+                display="flex"
+                justifyContent="flex-start"   
+                alignItems="center"     
+                gap={4}                   
               >
                 <link.icon />
                 {link.name}
