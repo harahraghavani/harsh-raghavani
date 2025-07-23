@@ -11,7 +11,7 @@ import { SiUnsplash, SiPexels, SiAdobelightroomclassic } from "react-icons/si";
 export const ABOUT_ME = {
   name: "Harsh Raghavani",
   description:
-    "Web Developer (JavaScript, React JS, Next JS), Photographer, Creative Editor",
+    "Web Developer, JavaScript, React JS, Next JS - Photographer, Creative Editor",
   about: [
     `Hi, I’m Harsh, a dedicated Web Developer passionate about building fast, functional, and scalable web applications using JavaScript, React.js, and Next.js.`,
 
